@@ -1,0 +1,53 @@
+.leftbanner {
+  background-color: #131313;
+  height: 100vh;
+}
+
+.rightbanner {
+  background-color: black;
+}
+
+.index {
+  position: absolute;
+  background: transparent;
+  float: left;
+}
+
+.indexsign {
+  margin-left: 12.5em;
+  margin-top: 1em;
+  color: #ffffff;
+  font-family: Dashicons;
+  font-size: 1rem;
+  word-break: break-word;
+  max-width: 8em;
+  text-transform: uppercase;
+}
+
+.indextitle {
+  margin-left: 2.5em;
+  margin-top: 0.5em;
+  color: #ffffff;
+  font-family: Dashicons;
+  font-size: 5rem;
+  word-break: break-word;
+  max-width: 8em;
+  text-transform: uppercase;
+}
+
+.indexsubtitle {
+  margin-left: 19em;
+  margin-top: 1em;
+  color: #919191;
+  font-family: sans-serif;
+  font-size: 1rem;
+  max-width: 15em;
+}
+
+.social {
+  margin-bottom: 6em;
+  margin-left: 4em;
+}
+.social span {
+  margin-left: 10px;
+}
