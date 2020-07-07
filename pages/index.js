@@ -22,18 +22,22 @@ export default function Home() {
           className={`${styles.leftbanner} d-flex justify-content-center align-items-end`}
         >
           <div className={styles.social}>
-            <span className="fa-stack fa-lg">
-              <i
-                className="fa fa-facebook-square fa-2x text-success"
-                aria-hidden="true"
-              />
-            </span>
-            <span className="fa-stack fa-lg">
-              <i
-                className="fa fa-instagram fa-2x text-success"
-                aria-hidden="true"
-              />
-            </span>
+            <a href="https://facebook.com/mezcalderon">
+              <span className="fa-stack fa-lg">
+                <i
+                  className="fa fa-facebook-square fa-2x text-success"
+                  aria-hidden="true"
+                />
+              </span>
+            </a>
+            <a href="https://instagram.com/mezcalderonoficial">
+              <span className="fa-stack fa-lg">
+                <i
+                  className="fa fa-instagram fa-2x text-success"
+                  aria-hidden="true"
+                />
+              </span>
+            </a>
             <span className="fa-stack fa-lg">
               <i
                 className="fa fa-twitter fa-2x text-success"
@@ -55,7 +59,6 @@ export default function Home() {
           </p>
         </div>
       </Row>
-      <Row>Hello World</Row>
     </Layout>
   );
 }
