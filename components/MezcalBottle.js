@@ -15,7 +15,7 @@ const Gun = () => {
   const [model, setModel] = useState();
   useFrame(() => {
     if (bottleRef.current) {
-      bottleRef.current.rotation.y += 0.2;
+      bottleRef.current.rotation.y += 0.05;
     }
   });
   GLTFLoader = require("three/examples/jsm/loaders/GLTFLoader").GLTFLoader;
