@@ -1,11 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import {
-  Canvas,
-  useLoader,
-  useFrame,
-  extend,
-  useThree,
-} from "react-three-fiber";
+import { Canvas, useFrame, extend, useThree } from "react-three-fiber";
 
 let GLTFLoader;
 let OrbitControls;
@@ -46,27 +40,12 @@ const Controls = () => {
   ) : null;
 };
 
-const Box = () => {
-  const mesh = useRef();
-  useFrame(() => {
-    mesh.current.rotation.y += 0.1;
-    mesh.current.rotation.x += 0.1;
-  });
-  return (
-    <mesh ref={mesh}>
-      <boxBufferGeometry attach="geometry" args={[1, 1, 1]} />
-      <meshPhysicalMaterial attach="material" color="green" />
-    </mesh>
-  );
-};
-
 const MezcalBottle = () => {
   return (
     <Canvas>
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Controls />
-      {/* <Box /> */}
       <Gun />
     </Canvas>
   );
