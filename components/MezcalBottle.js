@@ -31,7 +31,7 @@ const Bottle = () => {
   });
   GLTFLoader = require("three/examples/jsm/loaders/GLTFLoader").GLTFLoader;
   useEffect(() => {
-    new GLTFLoader().load("/botella_cristal3.glb", (gltf) => {
+    new GLTFLoader().load("/botella_cristal4.glb", (gltf) => {
       // debugger;
       setModel(gltf);
     });
