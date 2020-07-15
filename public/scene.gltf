@@ -1,0 +1,277 @@
+{
+  "accessors": [
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3402,
+      "max": [
+        0.38234001398086548,
+        0.38345000147819519,
+        1.7867499589920044
+      ],
+      "min": [
+        -0.38144001364707947,
+        -0.38111001253128052,
+        0.37977999448776245
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 40824,
+      "componentType": 5126,
+      "count": 3402,
+      "max": [
+        1,
+        1,
+        0.99899786710739136
+      ],
+      "min": [
+        -1,
+        -1,
+        -0.69428443908691406
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 20274,
+      "max": [
+        3401
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 81648,
+      "componentType": 5126,
+      "count": 1197,
+      "max": [
+        1.0004400014877319,
+        1.0007699728012085,
+        0.38396000862121582
+      ],
+      "min": [
+        -0.99955999851226807,
+        -0.9992300271987915,
+        -5.0753002166748047
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 96012,
+      "componentType": 5126,
+      "count": 1197,
+      "max": [
+        0.99695032835006714,
+        0.99695032835006714,
+        0.77169013023376465
+      ],
+      "min": [
+        -0.99695032835006714,
+        -0.99695032835006714,
+        -0.99805331230163574
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 81096,
+      "componentType": 5125,
+      "count": 7035,
+      "max": [
+        1196
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "MysteryPancake (https://sketchfab.com/mysterypancake)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/710100865395435cacb3bcf6514cb495",
+      "title": "Wine Bottle"
+    },
+    "generator": "Sketchfab-3.19.8",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 109236,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 110376,
+      "byteOffset": 109236,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 219612,
+      "uri": "scene.bin"
+    }
+  ],
+  "extensionsRequired": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "extensionsUsed": [
+    "KHR_materials_pbrSpecularGlossiness"
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0.39955136899999999,
+            0.31198019584999997,
+            0.029755619099999998,
+            1
+          ],
+          "glossinessFactor": 0.5,
+          "specularFactor": [
+            0.80000001190000003,
+            0.62957710030000003,
+            0.060683824099999999
+          ]
+        }
+      },
+      "name": "material"
+    },
+    {
+      "alphaMode": "BLEND",
+      "doubleSided": true,
+      "extensions": {
+        "KHR_materials_pbrSpecularGlossiness": {
+          "diffuseFactor": [
+            0,
+            0,
+            0,
+            0.10000000000000001
+          ],
+          "glossinessFactor": 0.65000000000000002,
+          "specularFactor": [
+            0.36130677979999998,
+            0.55201140150000005,
+            0.29613827079999999
+          ]
+        }
+      },
+      "name": "Glass"
+    }
+  ],
+  "meshes": [
+    {
+      "name": "WineBottle_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0
+          },
+          "indices": 2,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "WineBottle_1",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 4,
+            "POSITION": 3
+          },
+          "indices": 5,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "name": "Root"
+    },
+    {
+      "children": [
+        4,
+        5
+      ],
+      "matrix": [
+        1.1761000000000001,
+        0,
+        0,
+        0,
+        0,
+        1.30307,
+        0,
+        0,
+        0,
+        0,
+        1.1761000000000001,
+        0,
+        0,
+        0,
+        6,
+        1
+      ],
+      "name": "WineBottle"
+    },
+    {
+      "mesh": 0,
+      "name": "WineBottle_0"
+    },
+    {
+      "mesh": 1,
+      "name": "WineBottle_1"
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ]
+}
+
