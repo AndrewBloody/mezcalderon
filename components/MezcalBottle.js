@@ -10,6 +10,7 @@ const Gun = () => {
   useFrame(() => {
     if (bottleRef.current) {
       bottleRef.current.rotation.y += 0.05;
+      bottleRef.current.position.y = -2;
     }
   });
   GLTFLoader = require("three/examples/jsm/loaders/GLTFLoader").GLTFLoader;
@@ -42,7 +43,11 @@ const Controls = () => {
 
 const MezcalBottle = () => {
   return (
-    <Canvas>
+    <Canvas
+      shadowMap
+      camera={{ position: [1, 1, 4] }}
+      style={{ background: "green" }}
+    >
       <ambientLight />
       <pointLight position={[10, 10, 10]} />
       <Controls />
