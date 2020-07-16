@@ -6,12 +6,14 @@
 
 .rightbanner {
   overflow: hidden;
+  background-color: rgb(197, 74, 101);
 }
 
 .index {
   margin-top: 1em;
   position: absolute;
   float: left;
+  background-color: cornflowerblue;
 }
 
 .indexsign {
@@ -70,7 +72,7 @@
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 1536px) {
   .indextitle {
     margin-top: 2em;
     margin-left: 1em;
@@ -82,8 +84,24 @@
   }
 
   .rightbanner {
-    height: 500px;
+    background-color: coral;
   }
+}
+
+@media only screen and (max-width: 420px) {
+  .indextitle {
+    margin-top: 2em;
+    margin-left: 1em;
+    font-size: 3em;
+  }
+  .indexsubtitle {
+    margin-left: 2em;
+    font-size: 1.3em;
+  }
+
+  /* .rightbanner {
+    height: 500px;
+  } */
 }
 
 @media only screen and (max-width: 320px) {
