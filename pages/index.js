@@ -15,13 +15,8 @@ export default function Home() {
   return (
     <Layout>
       <Row>
-        <Col
-          sm="12"
-          lg="4"
-          md="4"
-          className={`${styles.leftbanner} d-flex justify-content-center align-items-end`}
-        >
-          <div className={styles.social}>
+        <Col lg="4" md="4" className={`${styles.leftbanner}`}>
+          <div className={`${styles.social} d-flex`}>
             <a href="https://facebook.com/mezcalderon">
               <span className="fa-stack fa-lg">
                 <i
@@ -46,11 +41,10 @@ export default function Home() {
             </span>
           </div>
         </Col>
-        <Col sm="12" lg="8" md="8" className={styles.rightbanner}>
+        <Col sm="12" lg="8" md="8" xs="12" className={styles.rightbanner}>
           <MezcalBottle />
         </Col>
-        <div className={styles.index}>
-          <p className={styles.indexsign}>Mezcalderón</p>
+        <div className={`${styles.index}`}>
           <p className={styles.indextitle}>Mezcal Artesanal</p>
           <p className={styles.indexsubtitle}>
             Mezcalderón es una marca que ofrece mezcal artesanal de alta

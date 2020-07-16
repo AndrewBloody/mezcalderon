@@ -3,6 +3,10 @@
   height: 100px;
 }
 
+#__next {
+  overflow: hidden;
+}
+
 canvas {
   height: 100%;
   margin: 0;

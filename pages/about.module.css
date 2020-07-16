@@ -1,0 +1,37 @@
+/********photo**********/
+
+.mezcalLogo {
+  width: 45ch;
+  height: 45ch;
+  background: black;
+  border-radius: 5px;
+  background-image: url(/images/mezcalderon_dorado.png);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgba(206, 206, 206, 0.3);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.mezcalLogo:hover {
+  box-shadow: 0px 30px 100px -10px rgb(187, 189, 187);
+}
+
+.maguey {
+  width: 45ch;
+  height: 45ch;
+  background: black;
+  border-radius: 5px;
+  background-image: url(/images/maguey.jpg);
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 0px 10px 30px -5px rgb(255, 228, 225);
+  transition: box-shadow 0.5s;
+  will-change: transform;
+  border: 15px solid white;
+}
+
+.maguey:hover {
+  box-shadow: 0px 30px 100px -10px rgb(0, 255, 0);
+}

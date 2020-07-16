@@ -20,6 +20,12 @@ const Layout = ({ children }) => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
+      <style jsx global>{`
+        body {
+          background: #121212;
+          color: white;
+        }
+      `}</style>
       <Head>
         <title>Mezcalderon</title>
         <link rel="icon" href="/favicon.ico" />
@@ -30,13 +36,13 @@ const Layout = ({ children }) => {
           crossorigin="anonymous"
         ></link>
       </Head>
-      {/* <Navbar color="light" light expand="md">
+      <Navbar className={`${styles.navbarPrincipal} navbar-dark `} expand="md">
         <NavbarBrand>
           <Link href="/">
-            <img className={styles.logo} src="/images/cactus.png" />
+            <img className={styles.logo} src="/images/logo_v2.svg" />
           </Link>
         </NavbarBrand>
-        <NavbarToggler onClick={toggle} />
+        <NavbarToggler onClick={toggle} className="custom-toggler" />
         <Collapse isOpen={isOpen} navbar>
           <Nav className="mr-auto" navbar>
             <NavItem>
@@ -54,9 +60,9 @@ const Layout = ({ children }) => {
               </NavLink>
             </NavItem>
           </Nav>
-          <NavbarText>Simple Text</NavbarText>
+          <NavbarText color="primary">Proximamente</NavbarText>
         </Collapse>
-      </Navbar> */}
+      </Navbar>
       {children}
     </div>
   );

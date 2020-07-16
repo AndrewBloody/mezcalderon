@@ -112,7 +112,7 @@ const MezcalBottle = () => {
       // }}
       colorManagement
       // pixelRatio={window.devicePixelRatio}
-      camera={{ position: [0, 0, 8] }}
+      camera={{ position: [0, 0, 10] }}
     >
       <ambientLight intensity={0.2} />
       {/* <spotLight intensity="10" position={[0, 0, 0]} color="yellow" /> */}
