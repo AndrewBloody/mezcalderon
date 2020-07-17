@@ -1,3 +1,4 @@
+import { NextSeo } from "next-seo";
 import {
   Container,
   Row,
@@ -44,14 +45,27 @@ function Photo({ imageClass }) {
 }
 
 export default function About() {
+  const SEO = {
+    title: "Novedades",
+    description:
+      "Sección que habla acerca de Mezcalderón con contenido de imagenes (Gallería)",
+    openGraph: {
+      title: "Acerca de",
+      description:
+        "Sección que habla acerca de Mezcalderón con contenido de imagenes (Gallería)",
+    },
+  };
   return (
-    <Layout>
-      <Container>
-        <div className="d-flex justify-content-around">
-          <Photo imageClass={styles.mezcalLogo} />
-          <Photo imageClass={styles.maguey} />
-        </div>
-      </Container>
-    </Layout>
+    <>
+      <NextSeo {...SEO} />
+      <Layout>
+        <Container>
+          <div className="d-flex justify-content-around">
+            <Photo imageClass={styles.mezcalLogo} />
+            <Photo imageClass={styles.maguey} />
+          </div>
+        </Container>
+      </Layout>
+    </>
   );
 }

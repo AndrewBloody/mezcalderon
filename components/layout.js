@@ -27,7 +27,7 @@ const Layout = ({ children }) => {
         }
       `}</style>
       <Head>
-        <title>Mezcalderon</title>
+        {/* <title>Mezcalderon</title> */}
         <link rel="icon" href="/favicon.ico" />
         <link
           rel="stylesheet"
@@ -39,7 +39,11 @@ const Layout = ({ children }) => {
       <Navbar className={`${styles.navbarPrincipal} navbar-dark `} expand="md">
         <NavbarBrand>
           <Link href="/">
-            <img className={styles.logo} src="/images/logo_v2.svg" />
+            <img
+              className={styles.logo}
+              src="/images/logo_v2.svg"
+              alt="Logo mezcalderon"
+            />
           </Link>
         </NavbarBrand>
         <NavbarToggler onClick={toggle} className="custom-toggler" />
