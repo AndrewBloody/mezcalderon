@@ -1,16 +1,5 @@
 import { NextSeo } from "next-seo";
-import {
-  Container,
-  Row,
-  Card,
-  Button,
-  CardImg,
-  CardTitle,
-  CardText,
-  CardColumns,
-  CardSubtitle,
-  CardBody,
-} from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import { useSpring, animated } from "react-spring";
 
 // Components
@@ -61,12 +50,12 @@ export default function About() {
       <Layout>
         <Container>
           <Row>
-          <Col xs="12" md="6">
-          <Photo imageClass={styles.mezcalLogo} />
-          </Col>
-          <Col xs="12" md="6">
-          <Photo imageClass={styles.maguey} />
-          </Col>
+            <Col xs="12" md="6" className="pt-3 pb-5">
+              <Photo imageClass={styles.mezcalLogo} />
+            </Col>
+            <Col xs="12" md="6" className="pt-3 pb-5">
+              <Photo imageClass={styles.maguey} />
+            </Col>
           </Row>
         </Container>
       </Layout>

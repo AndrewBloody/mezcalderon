@@ -20,12 +20,6 @@ const Layout = ({ children }) => {
   const toggle = () => setIsOpen(!isOpen);
   return (
     <div>
-      <style jsx global>{`
-        body {
-          background: #121212;
-          color: white;
-        }
-      `}</style>
       <Head>
         {/* <title>Mezcalderon</title> */}
         <link rel="icon" href="/favicon.ico" />
@@ -35,6 +29,10 @@ const Layout = ({ children }) => {
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
           crossorigin="anonymous"
         ></link>
+        <link
+          href="https://fonts.googleapis.com/css2?family=Parisiennes&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Navbar className={`${styles.navbarPrincipal} navbar-dark `} expand="md">
         <NavbarBrand>

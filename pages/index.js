@@ -16,16 +16,23 @@ export default function Home() {
   return (
     <Layout>
       <Row>
-        <Col lg="4" md="4" className={`${styles.leftbanner}`}>
-          <div className={`${styles.index}`}>
-            <p className={styles.indextitle}>Mezcal Artesanal</p>
-            <p className={styles.indexsubtitle}>
-              Mezcalderón es una marca que ofrece mezcal artesanal de alta
-              calidad. Con su aroma único y notas de sabores agradables al
-              paladar.
-            </p>
-          </div>
-          <div className={`${styles.social} d-flex`}>
+        <Col lg="5" md="4" sm="12" xs="12" id="titlemz">
+          <Row className={`${styles.index} p-5`}>
+            {/* <img src="/images/logo_mezcalderon_dorado.svg" alt="logo-oficial" /> */}
+            <blockquote className="blockquote text-right">
+              <h1 className={`${styles.indexTitle} display-1 text-right"`}>
+                Mezcal Artesanal
+              </h1>
+
+              <footer className="mr-3 blockquote-footer text-right">
+                <cite title="Source Title"> Mezcalderón</cite> es una marca que
+                ofrece mezcal artesanal de alta calidad. Con su aroma único y
+                notas de sabores agradables al paladar.
+              </footer>
+            </blockquote>
+          </Row>
+
+          <div className="d-flex justify-content-end align-items-end ">
             <a href="https://facebook.com/mezcalderon">
               <span className="fa-stack fa-lg">
                 <i
@@ -50,7 +57,29 @@ export default function Home() {
             </span>
           </div>
         </Col>
-        <Col sm="12" lg="8" md="8" xs="12" className={styles.rightbanner}>
+        <Col
+          sm="12"
+          lg="7"
+          md="8"
+          sm="12"
+          xs="12"
+          className={styles.rigthtpanel}
+        >
+          <div className={`${styles.btnScroll} d-flex justify-content-center`}>
+            <Link href="#titlemz">
+              <div>
+                <i
+                  className="fa fa-arrow-up fa-2x text-success"
+                  aria-hidden="true"
+                />
+                <i
+                  className="fa fa-arrow-up fa-2x text-success"
+                  aria-hidden="true"
+                />
+              </div>
+            </Link>
+          </div>
+
           <MezcalBottle />
         </Col>
       </Row>
