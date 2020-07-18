@@ -60,10 +60,14 @@ export default function About() {
       <NextSeo {...SEO} />
       <Layout>
         <Container>
-          <div className="d-flex justify-content-around">
-            <Photo imageClass={styles.mezcalLogo} />
-            <Photo imageClass={styles.maguey} />
-          </div>
+          <Row>
+          <Col xs="12" md="6">
+          <Photo imageClass={styles.mezcalLogo} />
+          </Col>
+          <Col xs="12" md="6">
+          <Photo imageClass={styles.maguey} />
+          </Col>
+          </Row>
         </Container>
       </Layout>
     </>

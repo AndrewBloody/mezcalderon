@@ -1,3 +1,8 @@
+body {
+  background: #121212;
+  color: white;
+}
+
 .index-image {
   width: 100px;
   height: 100px;
