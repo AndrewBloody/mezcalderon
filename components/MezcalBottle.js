@@ -47,7 +47,7 @@ const Bottle = () => {
         penumbra={1}
         castShadow
         color="yellow"
-        intensity="10"
+        intensity="2"
       />
     </group>
   ) : null;
@@ -76,7 +76,7 @@ const Controls = () => {
 
 function Cube(props) {
   const ref = useRef();
-  const texture = useLoader(THREE.TextureLoader, "/images/magey.jpg");
+  const texture = useLoader(THREE.TextureLoader, "/images/cupeatra7.jpg");
 
   // useFrame(() => {
   //   ref.current.rotation.x += 0.003;
@@ -93,7 +93,7 @@ function Cube(props) {
         side={THREE.BackSide}
         map-wrapS={THREE.RepeatWrapping}
         map-wrapT={THREE.RepeatWrapping}
-        map-repeat={[2, 1]}
+        map-repeat={[1, 1]}
       />
     </mesh>
   );
