@@ -5,9 +5,6 @@
   height: 100vh;
 }
 
-.btnScroll {
-}
-
 /* END 
 MEZCAL ANIMATION */
 .index {
@@ -18,14 +15,68 @@ MEZCAL ANIMATION */
   font-size: 8vw;
 }
 
+.btnScroll {
+  display: none;
+}
+
+.mezcalBottle {
+  height: 100vh;
+}
+
+@media only screen and (max-width: 780px) {
+  .mezcalBottle {
+    padding: 5em 0em 0em 0em;
+  }
+  .btnScroll {
+    display: none;
+  }
+  .mezcalBottle {
+    height: 90vh;
+  }
+}
+
 @media only screen and (max-width: 500px) {
+  .body {
+    background-color: greenyellow;
+  }
+  .mezcalBottle {
+    padding: 0.2em 5em 5em 5em;
+    border-color: darkgray;
+    box-shadow: goldenrod;
+  }
+  .btnScroll {
+    display: block;
+  }
+  .mezcalBottle {
+    height: 90vh;
+  }
 }
 
 @media (max-width: 420px) {
-  /* .rightbanner {
-    height: 500px;
-  } */
+  .mezcalBottle {
+    padding: 0.2em 5em 5em 5em;
+    border-color: darkgray;
+    box-shadow: goldenrod;
+  }
+  .body {
+    background-color: pink;
+  }
+  .btnScroll {
+    display: block;
+  }
+  .mezcalBottle {
+    height: 80vh;
+  }
 }
 
 @media (max-width: 320px) {
+  .body {
+    background-color: palevioletred;
+  }
+  .btnScroll {
+    display: block;
+  }
+  .mezcalBottle {
+    height: 70vh;
+  }
 }

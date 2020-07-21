@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <Layout>
       <Row>
-        <Col lg="5" md="4" sm="12" xs="12" id="titlemz">
+        <Col lg="5" md="5" sm="12" xs="12" id="titlemz">
           <Row className={`${styles.index} p-5`}>
             {/* <img src="/images/logo_mezcalderon_dorado.svg" alt="logo-oficial" /> */}
             <blockquote className="blockquote text-right">
@@ -49,7 +49,7 @@ export default function Home() {
                 />
               </span>
             </a>
-            <span className="fa-stack fa-lg">
+            <span className="fa-stack fa-lg mr-2">
               <i
                 className="fa fa-twitter fa-2x text-success"
                 aria-hidden="true"
@@ -60,27 +60,32 @@ export default function Home() {
         <Col
           sm="12"
           lg="7"
-          md="8"
+          md="7"
           sm="12"
           xs="12"
           className={styles.rigthtpanel}
         >
-          <div className={`${styles.btnScroll} d-flex justify-content-center`}>
+          <div className={`${styles.btnScroll} `}>
             <Link href="#titlemz">
-              <div>
-                <i
-                  className="fa fa-arrow-up fa-2x text-success"
-                  aria-hidden="true"
-                />
-                <i
-                  className="fa fa-arrow-up fa-2x text-success"
-                  aria-hidden="true"
-                />
+              <div className="d-flex justify-content-center">
+                <div>
+                  <i
+                    className="fa fa-arrow-up fa-2x text-success"
+                    aria-hidden="true"
+                  />
+                </div>
+                <div>
+                  <i
+                    className="fa fa-arrow-up fa-2x text-success"
+                    aria-hidden="true"
+                  />
+                </div>
               </div>
             </Link>
           </div>
-
-          <MezcalBottle />
+          <div className={`${styles.mezcalBottle}`}>
+            <MezcalBottle />
+          </div>
         </Col>
       </Row>
     </Layout>
