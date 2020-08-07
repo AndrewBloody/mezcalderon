@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect, useContext } from "react";
 import Head from "next/head";
 import Link from "next/link";
 
@@ -13,11 +13,35 @@ import {
   NavbarText,
 } from "reactstrap";
 
+// Components
+import RegisterModal from "./Login/RegisterModal";
+import LogOut from "./Login/LogOut";
+import LoginModal from "./Login/LoginModal";
+
+// Context
+import { AuthContext } from "../contexts/AuthContext";
+
+import { firebase } from "../firebase";
+
 import styles from "./layout.module.css";
 
 const Layout = ({ children }) => {
   const [isOpen, setIsOpen] = useState(false);
+  const { user, setUser } = useContext(AuthContext);
   const toggle = () => setIsOpen(!isOpen);
+
+  useEffect(() => {
+    firebase.auth().onAuthStateChanged((user) => {
+      if (user) {
+        setUser(user);
+      } else {
+        setUser(false);
+      }
+    });
+  }, []);
+
+  console.log("usuario", user);
+
   return (
     <div>
       <Head>
@@ -61,8 +85,14 @@ const Layout = ({ children }) => {
                 </Link>
               </NavLink>
             </NavItem>
+            {!user ? (
+              <NavItem>
+                <LoginModal />
+              </NavItem>
+            ) : null}
+            <NavItem>{user ? <LogOut /> : <RegisterModal />}</NavItem>
           </Nav>
-          <NavbarText color="primary">Proximamente</NavbarText>
+          <NavbarText color="primary">{user ? user.email : ""}</NavbarText>
         </Collapse>
       </Navbar>
       {children}

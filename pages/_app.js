@@ -1,4 +1,8 @@
 import { DefaultSeo } from "next-seo";
+
+// Context
+import { AuthContextProvider } from "../contexts/AuthContext";
+
 // CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/global.css";
@@ -9,7 +13,9 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <DefaultSeo {...SEO} />
-      <Component {...pageProps} />
+      <AuthContextProvider>
+        <Component {...pageProps} />
+      </AuthContextProvider>
     </>
   );
 }
