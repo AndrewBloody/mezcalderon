@@ -33,7 +33,7 @@ const RegisterModal = () => {
   return (
     <>
       <Modal isOpen={modal} toggle={toggleModal}>
-        <ModalHeader toggle={toggleModal}>Registro</ModalHeader>
+        <ModalHeader toggle={toggleModal}> Registro</ModalHeader>
         <ModalBody>
           <form onSubmit={handleSubmit(onSubmit)}>
             <label for="name">
